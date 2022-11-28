@@ -18,7 +18,7 @@ public class FloodFill {
         sc.close();
     }
     public static void floodfill(int [][] a , int n , int m , String ans , boolean[][] visited){
-        if(n < 0 || m < 0 || n == a.length || m == a[0].length || a[n][m] == 1){
+        if(n < 0 || m < 0 || n == a.length || m == a[0].length || a[n][m] == 1 || visited[n][m] == true){
             return;
         }
         if( n == a.length - 1 && m == a[0].length - 1){
