@@ -13,6 +13,7 @@ public class TargetSum {
 
         int tar = sc.nextInt();
         printTargetSumSubsets(a , 0 , "" , 0 ,tar);
+        sc.close();
     }
 
     private static void printTargetSumSubsets(int[] a, int i, String set, int sos, int tar) {
